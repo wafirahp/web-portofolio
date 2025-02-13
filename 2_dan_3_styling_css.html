@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Saya</title>
+    <style>
+        /* Styling untuk body */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #2A9CA0; /* Warna dari background utama */
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Styling untuk header */
+        header {
+            background-color: #012A4A; /* Warna biru tua dari gambar */
+            color: white;
+            text-align: center;
+            padding: 1.1rem 0;
+            font-size: 1.5rem;
+        }
+        
+        /* Styling untuk navigasi */
+        nav {
+            background-color: #d9d7d7; /* Warna biru medium */
+            overflow: hidden;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Shadow halus */
+
+        }
+        nav a {
+            color: black;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: inline-block;
+        }
+        nav a:hover {
+            background-color: #B0B0B0; /* Warna hover biru lebih terang */
+        }
+        
+        /* Styling untuk section konten */
+        section {
+            padding: 40px 20px;
+            margin: 20px auto;
+            max-width: 1200px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Styling untuk section dengan ID 'about' */
+        #about {
+            background-color: #D9F0FF; /* Warna biru muda dari gambar */
+        }
+        
+        /* Styling untuk section dengan ID 'projects' */
+        #projects {
+            background-color: #CCE5FF; /* Biru pastel lembut */
+        }
+
+        /* Styling untuk footer */
+        footer {
+            background-color: #012A4A; /* Warna footer sama dengan header */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: static;
+            bottom: 0;
+            width: 100%;
+        }
+       
+        /* Styling untuk gambar profil */
+        .image-container img {
+            border-radius: 50%;
+            border: 5px solid #023E7D;
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+        }
+        
+        /* Styling untuk tabel proyek */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: #BFD7ED; /* Warna header tabel */
+        }
+        
+        /* Styling untuk formulir */
+        input, textarea, button {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #012A4A;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 1.1rem;
+        }
+        button:hover {
+            background-color: #00509D; /* Warna hover dari tombol */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Portofolio</h1>
+        <p>Wafirah Putri Hadianti, S.Stat.</p>
+    </header>
+    
+    <nav>
+        <a href="#about">Tentang Saya</a>
+        <a href="#projects">Proyek</a>
+        <a href="#contact">Kontak</a>
+    </nav>
+    
+    <section id="about">
+        <h2>Tentang Saya</h2>
+        <p>Halo, saya seorang fresh graduate dari jurusan Statistika yang memiliki minat di bidang data.</p>
+        <div class="image-container" style="text-align: center;">
+            <img src="D:/Fira/Web Dev/Pas Foto-Wafirah1.jpeg" alt="Profil Saya" width="250" height="180"> 
+        </div>
+    </section>
+    
+    <section id="projects">
+        <h2>Proyek Saya</h2>
+        <p>Berikut adalah beberapa proyek yang telah saya kerjakan:</p>
+        <table>
+            <tr>
+                <th>Nama Proyek</th>
+                <th>Deskripsi</th>
+                <th>Tahun</th>
+            </tr>
+            <tr>
+                <td>Aplikasi Healthy-teeth</td>
+                <td>Aplikasi untuk mendeteksi penyakit gigi.</td>
+                <td>2023</td>
+            </tr>
+            <tr>
+                <td>Dashboard Interaktif</td>
+                <td>Dashboard interaktif berbasis excel.</td>
+                <td>2025</td>
+            </tr>
+            <tr>
+                <td>Portofolio Interaktif</td>
+                <td>Website portofolio untuk menampilkan pekerjaan saya.</td>
+                <td>2025</td>
+            </tr>
+        </table>
+    </section>
+    
+    <section id="contact">
+        <h2>Kontak</h2>
+        <p>Email: wafirahph@gmail.com</p>
+        <p>Telepon: +62 813 3325 7047</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/wafirahp/" target="_blank">Linkedin</a>
+            <a href="https://github.com/wafirahp" target="_blank">GitHub</a>
+        </div>
+        <h3>Hubungi Saya</h3>
+        <form>
+            <input type="text" id="name" name="name" placeholder="Nama Anda" required>
+            <input type="email" id="email" name="email" placeholder="Email Anda" required>
+            <textarea id="message" name="message" rows="4" placeholder="Pesan Anda" required></textarea>
+            <button type="submit">Kirim Pesan</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Portofolio Saya. Semua Hak Dilindungi.</p>
+    </footer>
+</body>
+</html>
